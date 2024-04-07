@@ -1,0 +1,8 @@
+ext {
+    junitJupiterVersionApi = '5.10.2'
+    restAssuredVersion = '5.4.0'
+    lombokVersion = '1.18.30'
+    gsonVersion = '2.9.0'
+    modelmapperVersion = '3.1.0'
+    assertjCoreVersion = '3.22.0'
+}

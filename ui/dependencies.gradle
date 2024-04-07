@@ -1,0 +1,9 @@
+ext {
+    junitJupiterVersionApi = '5.10.2'
+    allureJunit5Version = '2.25.0'
+    selenideVersion = '7.2.1'
+    assertjCoreVersion = '3.22.0'
+    allureSelenideVersion = '2.25.0'
+    modelMapperVersion = '3.2.0'
+    ownerVersion = '1.0.12'
+}

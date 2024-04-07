@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id("io.qameta.allure") version "2.11.2"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+apply from: 'dependencies.gradle'
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: "${junitJupiterVersionApi}"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitJupiterVersionApi}"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:${junitJupiterVersionApi}"
+    testImplementation "io.qameta.allure:allure-junit5:${allureJunit5Version}"
+    testImplementation "com.codeborne:selenide:${selenideVersion}"
+    testImplementation "org.assertj:assertj-core:${assertjCoreVersion}"
+    testImplementation "io.qameta.allure:allure-selenide:${allureSelenideVersion}"
+    testImplementation "org.modelmapper:modelmapper:${modelMapperVersion}"
+    implementation "org.aeonbits.owner:owner:${ownerVersion}"
+}
+
+test {
+    useJUnitPlatform()
+}

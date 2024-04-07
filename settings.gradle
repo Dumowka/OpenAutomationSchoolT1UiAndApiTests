@@ -1,0 +1,4 @@
+rootProject.name = 'OpenAutomationSchoolT1UiAndApiTests'
+include 'ui'
+include 'api'
+
