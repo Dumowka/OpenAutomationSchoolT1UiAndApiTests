@@ -21,7 +21,7 @@ class LoginTest extends CommonTest {
 
     protected final static String TEST_NAME = "Авторизация";
 
-    private static final String PATH = config.getConfigParameter("LOGIN_PATH");
+    private static final String PATH = properties.loginPath();
 
     private UserLoginRequest userLoginRequest;
 

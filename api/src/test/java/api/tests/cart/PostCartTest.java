@@ -29,7 +29,7 @@ class PostCartTest extends CommonTest {
 
     protected final static String TEST_NAME = "Добавление товара в корзину";
 
-    private static final String PATH = config.getConfigParameter("CART_PATH");
+    private static final String PATH = properties.cartPath();
 
     private final AddToCartRequest addToCartRequest = new AddToCartRequest(1, 2);
 

@@ -1,6 +1,5 @@
 package api.common;
 
-import api.ConfigProperties;
 import api.models.AccessToken;
 import api.models.request.UserLoginRequest;
 import io.restassured.response.ValidatableResponse;
@@ -10,7 +9,7 @@ import static io.restassured.RestAssured.given;
 
 public class ApiClient {
 
-    private static final ConfigProperties config = ConfigProperties.getInstance();
+    private static final UIProperties properties = ConfigProperties.getInstance();
 
     public static ValidatableResponse commonGet(String accessToken, int statusCode, String path, Object... pathParams) {
         return given()
@@ -125,7 +124,7 @@ public class ApiClient {
         return commonPostWithoutToken(
                 200,
                 new UserLoginRequest("username", "password"),
-                config.getConfigParameter("LOGIN_PATH")
+                properties.loginPath()
         ).extract().as(AccessToken.class);
     }
 }

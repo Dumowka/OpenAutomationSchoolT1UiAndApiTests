@@ -1,11 +1,17 @@
 group 'org.example'
 version '1.0-SNAPSHOT'
 
+apply from: 'dependencies.gradle'
+
 allprojects {
     apply plugin: 'java'
 
     repositories {
         mavenCentral()
+    }
+
+    dependencies {
+        implementation "org.aeonbits.owner:owner:${ownerVersion}"
     }
 
     test {

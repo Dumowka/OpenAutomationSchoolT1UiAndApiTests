@@ -19,7 +19,7 @@ class GetProductsTest extends CommonTest {
 
     protected final static String TEST_NAME = "Получение списка продуктов";
 
-    private static final String PATH = config.getConfigParameter("PRODUCTS_PATH");
+    private static final String PATH = properties.productsPath();
 
     private final List<ProductDto> products = List.of(
             new ProductDto(1, "HP Pavilion Laptop", "Electronics", new BigDecimal("10.99"), new BigDecimal("10.0")),

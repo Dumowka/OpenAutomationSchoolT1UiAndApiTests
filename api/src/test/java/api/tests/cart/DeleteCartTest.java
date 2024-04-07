@@ -18,7 +18,7 @@ class DeleteCartTest extends CommonTest {
 
     protected static final String TEST_NAME = "Удаление корзины с товарами";
 
-    private static final String PATH = config.getConfigParameter("CART_BY_ID_PATH");
+    private static final String PATH = properties.cartByIdPath();
 
     private final int cartId = 1;
 

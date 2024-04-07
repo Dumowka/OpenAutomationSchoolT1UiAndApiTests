@@ -19,7 +19,7 @@ class RegisterTest extends CommonTest {
 
     protected final static String TEST_NAME = "Регистрация пользователя";
 
-    private static final String PATH = config.getConfigParameter("REGISTER_PATH");
+    private static final String PATH = properties.registerPath();
 
     private UserRegistrationRequest userRegistrationRequest;
 

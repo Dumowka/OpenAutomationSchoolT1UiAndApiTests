@@ -20,7 +20,7 @@ class GetCartTest extends CommonTest {
 
     protected static final String TEST_NAME = "Получение корзины с товарами";
 
-    private static final String PATH = config.getConfigParameter("CART_PATH");
+    private static final String PATH = properties.cartPath();
 
     @Test
     @DisplayName(TEST_NAME)

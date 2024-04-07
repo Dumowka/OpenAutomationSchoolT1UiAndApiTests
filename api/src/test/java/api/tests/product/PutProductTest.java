@@ -32,7 +32,7 @@ class PutProductTest extends CommonTest {
 
     protected final static String TEST_NAME = "Изменение продукта";
 
-    private static final String PATH = config.getConfigParameter("PRODUCT_BY_ID_PATH");
+    private static final String PATH = properties.productByIdPath();
 
     private ProductDto product;
 

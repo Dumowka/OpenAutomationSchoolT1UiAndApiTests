@@ -31,7 +31,7 @@ class PostProductsTest extends CommonTest {
 
     protected final static String TEST_NAME = "Добавление продукта";
 
-    private static final String PATH = config.getConfigParameter("PRODUCTS_PATH");
+    private static final String PATH = properties.productsPath();
 
     private ProductRequestDto productRequest;
 

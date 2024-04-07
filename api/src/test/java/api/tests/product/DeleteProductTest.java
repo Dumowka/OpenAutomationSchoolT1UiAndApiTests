@@ -20,7 +20,7 @@ class DeleteProductTest extends CommonTest {
 
     protected final static String TEST_NAME = "Удаление продукта";
 
-    private static final String PATH = config.getConfigParameter("PRODUCT_BY_ID_PATH");
+    private static final String PATH = properties.productByIdPath();
 
     private int productId;
 
